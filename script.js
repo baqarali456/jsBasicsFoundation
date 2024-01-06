@@ -282,7 +282,21 @@ rejected: meaning that the operation failed. reject() is is rejected state
         }
     }
 
+    // Conditional Statements;
+
+    let age = "ba";
+    if(age < 18){
+        // console.log("You are Kid")
+    }
+    else if(age >= 18){
+        //  console.log("You are Elder");
+    }
+    else{
+        // console.log("Not Valid age");
+    }
+
     
+
 
 
     
