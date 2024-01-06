@@ -180,9 +180,9 @@ console.log(boxes); // HTML Collection
   console.log(box1);
   console.clear();
 
-  box1.setAttribute("id","uniqueBox");
-  console.log(box1.hasAttribute("id"));
-  console.clear();
+//   box1.setAttribute("id","uniqueBox");
+//   console.log(box1.hasAttribute("id"));
+//   console.clear();
   
 
   // Callback Functions
@@ -235,12 +235,65 @@ rejected: meaning that the operation failed. reject() is is rejected state
     */
    
    let p1 = new Promise((resolve,reject)=>{
-        // resolve(4) // fullfilled state,result - 4
+        resolve(4) // fullfilled state,result - 4
         // reject("error") // rejected state,result - "error";
-        // console.log("baqar") // pending state
+        console.log("baqar") // pending state
+    });
+
+    // console.log(p1);
+
+    p1
+    .then(value=>console.log(value))
+    .catch(err=>console.log(err));
+    console.clear();
+
+    // Closures
+
+
+    function Outer(){
+     let name = "Baqar";
+     
+        function inner(){
+            console.log(name);  
+        }
+        name = "Zubair";
+        return inner
+
+    }
+    let mainfunc = Outer()
+    mainfunc();
+
+    console.clear();
+
+
+    boxes = document.querySelectorAll('.box');
+
+    boxes.forEach(box=>{
+     box.addEventListener('click',generateColors(box.id))
     })
 
-    console.log(p1);
+
+    // closures Example
+
+    function generateColors(colors){
+       return function returnColor(){
+           document.body.style.backgroundColor = `${colors}`
+
+        }
+    }
+
+    
+
+
+    
+    
+    
+
+
+    
+    
+
+
     
 
 
