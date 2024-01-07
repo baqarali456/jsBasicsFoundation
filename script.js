@@ -235,7 +235,7 @@ rejected: meaning that the operation failed. reject() is is rejected state
     */
    
    let p1 = new Promise((resolve,reject)=>{
-        resolve(4) // fullfilled state,result - 4
+        // resolve(4) // fullfilled state,result - 4
         // reject("error") // rejected state,result - "error";
         console.log("baqar") // pending state
     });
@@ -295,6 +295,95 @@ rejected: meaning that the operation failed. reject() is is rejected state
         // console.log("Not Valid age");
     }
 
+    // async Javascript
+
+
+    // let load = 1
+    // let time = 3000
+
+    // setInterval(()=>{
+        
+    //     console.log(`${load++},${time}`);
+    // },time);
+
+    // let pro1 = new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         resolve("baqar")
+    //     },1000)
+    // })
+    // let pro2 =  new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         resolve("zubair")
+    //     },2000)
+    // })
+    // let pro3 = new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         resolve("haider")
+    //     },3000)
+    // })
+    
+
+    // let load = true
+    // async function mainfuncs(){
+    //    console.time()
+    //    let a1 =  pro1
+    //    let a2 =  pro2
+    //    let a3 =  pro3;
+    // //    console.log(a1,a2,a3);
+       
+    //    let values = await Promise.all([a1,a2,a3]);
+       
+    //    console.log(values);
+    // //    console.log("baqar");
+    //    load = false
+    //    console.timeEnd()
+       
+        
+    // }
+    // mainfuncs()
+    // console.log(load);
+    console.clear();
+
+    // pattern print;
+
+    let stri = ""
+    for(i=0;i<=4;i++){
+        stri = stri + "*"
+        
+    }
+    console.log(stri);
+
+    stri = ""
+    for(i=0;i<=3;i++){
+        stri += '*'
+        
+    }
+    console.log(stri);
+    stri = ""
+    for(i=0;i<=2;i++){
+        stri += '*'
+        
+    }
+    console.log(stri);
+    stri = ""
+    for(i=0;i<=1;i++){
+        stri += '*'
+        
+    }
+    console.log(stri);
+    stri = ""
+    for(i=0;i<=0;i++){
+        stri += '*'
+        
+    }
+    console.log(stri);
+
+    
+   
+
+
+    
+   
     
 
 
