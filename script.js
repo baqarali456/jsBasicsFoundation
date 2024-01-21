@@ -351,32 +351,584 @@ rejected: meaning that the operation failed. reject() is is rejected state
         stri = stri + "*"
         
     }
-    console.log(stri);
+    // console.log(stri);
 
     stri = ""
     for(i=0;i<=3;i++){
         stri += '*'
         
     }
-    console.log(stri);
+    // console.log(stri);
     stri = ""
     for(i=0;i<=2;i++){
         stri += '*'
         
     }
-    console.log(stri);
+    // console.log(stri);
     stri = ""
     for(i=0;i<=1;i++){
         stri += '*'
         
     }
-    console.log(stri);
+    // console.log(stri);
     stri = ""
     for(i=0;i<=0;i++){
         stri += '*'
         
     }
-    console.log(stri);
+    // console.log(stri);
+
+
+    // async Javascript
+
+   /* async callbacks go to Web APIs then register in register callbacks . The task is sent to the queue whenever the async callback times out.
+ The task queue sends an async callback to the callstack.
+ 
+ */
+
+    // orange.addEventListener('click',()=>{
+    //     console.log("baqar");  
+    // })
+
+    // console.log("hello");
+
+    // setTimeout(()=>{
+    //     console.log("hello2");
+    // },3000);
+
+
+    // let a2 = "baqar";
+
+    // function helloji(){
+    //     a2 = "Zubair";
+    //     console.log("helloji"); 
+    // }
+    // helloji();
+    // console.log(a2);
+
+    // let pattern = "";
+    // for(i=0;i<5;i++){
+    //     pattern += "*";    
+    // }
+
+    // for(i=0;i<6;i++){
+    //     const p = document.createElement('p');
+    //     p.innerHTML = i;
+    //     document.body.appendChild(p);
+    // }
+
+    // const orange = document.getElementById('orange');
+    // let index = 0;
+    // orange.addEventListener('click',()=>{
+    //   index++;
+    //   console.log(index);
+    //   load()
+    // })
+
+    // let loading = true;
+
+    // function load(){
+    //     if(loading){
+    //         let h1 = document.createElement('h1');
+    //         h1.innerHTML = "Loading...";
+    //         h1.style.textAlign = "center";
+    //         document.body.appendChild(h1)
+    //         setTimeout(()=>{
+    //          h1.innerHTML = "";
+    //         },3000);
+    //         loading = false;
+    //     }
+    //     else{
+    //         let h1 = document.createElement('h1');
+    //         h1.innerHTML = "Loading...";
+    //         h1.style.textAlign = "center";
+    //         document.body.appendChild(h1)
+    //         setTimeout(()=>{
+    //          h1.innerHTML = "";
+    //         },3000);
+    //     }
+    // }
+    // load();
+
+    // const boxess = document.querySelectorAll('.box');
+    // // console.log(boxess);
+    // boxess.forEach(box=>{
+    //     const ids = box.id; 
+    //     box.innerHTML = ids.charAt(0).toLocaleUpperCase() + ids.slice(1).toLocaleLowerCase()
+    // });
+
+    // let sum = 0;
+
+    // for(i=1;i<=4;i++){ //i=4
+    //  sum += i; //10
+    // }
+    // console.log(sum);
+
+    // let factorial = 1;
+
+    // for(i=1;i<=5;i++){ // i=1
+    //     factorial *= i  //120
+    // }
+    // console.log(factorial);
+
+    // for(let i=0;i<6;i++){
+    //     console.log(document.body.innerHTML = `hello ${i}`)
+    //     document.body.innerHTML = `hello ${i}`;
+        
+    // }
+    
+    
+
+
+    let pattern = "";
+    for(let i=0;i<5;i++){
+        pattern = pattern + "*"; //0 //01 //012 //0123 //01234
+    }
+    // console.log(pattern);  
+    pattern = "";
+    for(let i=0;i<5;i++){
+       pattern = `${pattern}*`; /* output "*****";  */
+    //    console.log(pattern);
+    }
+    // for(let i =0;i<4;i++){
+    //     let p = document.createElement('p');
+    //     p.innerHTML = `index ${i}`;
+    //     document.body.appendChild(p)
+    // }
+
+    let largestString = ["baqar","zubair Ansari","Talib Khan"];
+     let findLargestString = largestString[0];
+
+    // for(let i=0;i<largestString.length;i++){
+    //    if(largestString[i].length > findLargestString.length){
+    //     findLargestString = largestString[i]
+    //    }
+    // }
+    // console.log(findLargestString);
+
+
+        // const boxess = document.querySelectorAll('.box');
+
+        // function generateColor(){
+        //     let hex = "#";
+        // for(let i =0;i<6;i++){
+        //     let colors = "0123456789ABCDEF";
+        //     hex = `${hex}${colors[Math.floor(Math.random() * colors.length)]}`;
+        // }
+        // return hex;
+        // }
+
+        // boxess.forEach(box=>{
+        //  box.style.backgroundColor = generateColor()
+        // });
+
+
+        let arr1 = [4,7,8,10,12];
+        // for(i=0;i<6;i++){
+        //     console.log(arr1[i]); 
+        // }
+
+        // arr1[0] = 9;
+        // console.log(arr1);
+
+        // New Revision
+
+    //1 primitive data types
+      
+    // null,number,string,symbol,undefined,boolean,bigint
+
+    //2 non-primitive Data types;
+
+    // Object,Array,Function;
+
+    //3 Array
+
+    let arry = [4,7,8,10,15];
+    // console.log(arry[0]);
+    // delete arry[1];
+    // console.log(arry);
+
+    // for(i=0;i<arry.length;i++){
+    //     console.log(arry[i]); 
+    // }
+
+   //4- String;
+
+    // let stris = "Baqar Ali";
+    // let totalLength = 0;
+    // for(i=0;i<stris.length;i++){
+    //     console.log(stris[i]); 
+    //     if(!stris[i].includes(" ")){
+    //         totalLength++;
+    //     }
+    // }
+    // console.log(totalLength);
+
+    //5- Global And Local Scope;
+
+    
+    {
+        let s = 10;
+        var q = 11;
+        const g ="baqar"
+        
+    }
+    
+    // console.log(s);
+    // console.log(q);
+    // console.log(g);
+    // function holo(){
+    //    let qwe = 10;
+    //    console.log(qwe);
+       
+    // }
+    // holo();
+    // qwe = 25;
+    // console.log(qwe);
+
+    // console.log("baqar");
+    // let hex = "#";
+    // for(let i=0;i<6;i++){
+    //     let colors = "0123456789ABCDEF";
+    //     hex += colors[Math.floor(Math.random() * colors.length)]
+        
+    // }
+    // console.log(hex);
+    
+    // document.body.backgroundColor = `${hex}`;
+
+    // let hex = "#";
+    // let colors = "0123456789abcdef"
+    // for(i=1;i<=6;i++){
+    //  hex = `${hex}${colors[Math.floor(Math.random() * colors.length)]}`;
+     
+    // }
+    // document.body.style.backgroundColor = hex;
+
+
+    // let password = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*({)[\]";
+    // let randomlength = Math.ceil(Math.random() * 30);
+    // let randompass = "";
+    // for(i=1;i<=randomlength;i++){
+    //  randompass += password[Math.floor(Math.random() * password.length)]
+    // }
+    // console.log(randomlength);
+    
+    // console.log(randompass);
+
+    // let sum = 0;
+    // for(i=1;i<=5;i++){
+    //    sum += i
+        
+    // }
+    // console.log(sum);
+
+    // let n = prompt("Enter your number");
+    // n = parseInt(n);
+    // let factorial = 1;
+
+    // for(let i=1;i<=n;i++){
+    //  factorial = factorial * i //24
+    // }
+    // alert(`your factorial is ${factorial}`);
+    
+    
+    
+    // for(i=1;i<=5;i++){
+    //     let p = document.createElement('p');
+    //     p.innerHTML = `hello ${i}`;
+    //     document.body.appendChild(p)
+    // }
+    // const ps = document.querySelectorAll('p');
+    // // ps.forEach((p,i)=>console.log(p));
+    // let check = false;
+    // for(Element of ps){
+    //     Element.innerHTML = check?"Helloji":"HelloBye";
+    // }
+
+
+    // let arrAR = [45,85,90,4,32,1];
+    // let largestNumber = arrAR[0];
+    
+    // for(let i = 0;i<arrAR.length;i++){
+    //   if(arr[i] > largestNumber){
+    //     largestNumber = arr[i];
+    //   }
+    // }
+    // console.log(largestNumber);
+    
+
+    // for(i=0;i<6;i++){  // Looping 6 times 0 to 5;
+    //     console.log(i);
+    // }
+
+
+    //  let arrAR = [45,85,90,4,32,1];
+    //  let length = 0;
+
+    //  arrAR.forEach(arrAR=>{
+    //   length++;
+    //  })
+    //  console.log(length,arrAR.length);
+
+    // Scoping
+
+    // let papa = "Zafar Ali"
+
+    // function functionExecution(){
+    //      papakaBeta = "Baqar Ali";
+    //     console.log(papa);
+        
+    // }
+    // functionExecution();
+    // console.log(papakaBeta);
+
+    // for(i=0;i<6;i++){
+    // console.log("baqar");
+    // }
+
+    // let sum = 0;
+    // for(i=1;i<6;i++){
+    //     sum += i // sum =15;
+    // }
+    // console.log(sum);
+
+    //  let factorial = 1;
+    //  for(let i = 1;i<=6;i++){
+    //      factorial = factorial * i; //720
+    //  }
+    //  console.log(factorial);
+    
+    let sum = 0;
+     // sum += 1;
+        //
+                                // sum+=2;
+                                // console.log(sum);
+                                // sum += 3;
+                                // console.log(sum);                         
+    //  for(let i =1;i<=5;i++){
+    //         sum = sum + i;
+    //         console.log(`Sum of ${i} is ${sum}`);
+    //      }   
+    //      console.log(sum);
+
+    // factorial =  2 * factorial;
+    // console.log(factorial); // 2
+    // factorial = 3 * factorial;
+    // console.log(factorial); // 6
+    // factorial = 4 * factorial;
+    // console.log(factorial); //24
+    // factorial = 5 * factorial;
+    // console.log(factorial); // 120
+    // factorial = 6 * factorial;
+    // console.log(factorial); //720;
+    
+    // let factorial = 1;
+    // for(let i = 1; i<=5;i++){
+    //     factorial = i * factorial;
+    //     console.log(`factorial of i ${i} is ${factorial}`,);
+    // }
+    // // console.log(factorial);
+
+
+    // let sub = 10;
+    // sub = sub - 5;
+    // console.log(sub);// 5;
+    // sub = sub - 3;
+    // console.log(sub);//2
+    // sub = sub + 4;
+    // console.log(sub); //6;
+    // sub = sub - 3;
+    // console.log(sub);//3
+    // sub = sub - 3;
+    // console.log(sub); //0
+    // sub = sub - (-16);
+    // console.log(sub); // 16;
+    // sub = sub - 8;
+    // console.log(sub);//8
+    // sub = sub - 3;
+    // console.log(sub);//5
+    // sub = sub - 2;
+    // console.log(sub); //3
+    // sub = sub + 1;
+    // console.log(sub); //4
+
+    // for(i=0;i<6;i++){
+    //     console.log(`${i} Hello Ji`);
+    // }
+
+    // for(let i = 0;i<5;i++){
+    //     let p = document.createElement('p');
+    //     p.innerHTML = `${i} Hello Ji`;
+    //     document.body.appendChild(p);
+    // }
+
+    let string = "Hello";
+
+    // for(let val of string){
+    //     console.log(val);
+    // }
+
+    // Array.from(string).forEach(element=>{
+    //     console.log(element); 
+    // })
+
+    
+    // let arrz =  [1,4,7,8,10,12];
+
+    // arrz.forEach(element => {
+    //     if(element < 10) console.log(element);   
+    // });
+
+    // console.log(this)
+
+    let qwe = [4,5,7,8,10,12];
+    // console.log(qwe);
+
+   Object.prototype.print = function (){
+        this.forEach(that=>{
+            console.log(that);
+        });  
+    }
+
+    // qwe.print();
+
+    let stringigy = "Baqar Ali";
+    // stringigy.print()
+
+    // let objs = {
+    //     name:"Baqar ali",
+    //     role:"web development",
+    //     show:function (){
+    //         console.log(`The role of ${this.name} is ${this.role}`)
+    //     }   
+    // }
+    // objs.show();
+    // objs.name = "Zubair Ansari";
+    // objs.show();
+
+    let trimsStr = "  Baqar Ali   ";
+    // strim = trimsStr.trim();
+    // console.log(strim);
+    
+
+    String.prototype.FullLength = function(){
+       return this.trim().length;
+    }
+    console.log(trimsStr.FullLength());
+
+    console.clear();
+    
+    //callback functions
+
+    // function getId(id,callback){
+    //     if(callback){
+    //         setTimeout(()=>{
+    //             callback();
+    //             console.log(id);
+                
+    //         },3000)
+    //     }
+    // } 
+    // getId(1,function(){
+    //     getId(2,function(){
+    //         getId(3,function(){
+    //             getId(4)
+    //         })
+    //     })
+    // })
+
+//     let objs = {
+//       0:"baqar",
+//       1:"zubair",
+//       print:function(){
+//         console.log(this);
+//       }
+      
+//     }
+//    objs.print();
+//    objs[0] = "Baqar Ali",
+//    objs.print();
+
+//    function createUser(name,email){
+//         this.name = name;
+//         this.email = email;    
+//         console.log(this);
+           
+//    }
+//    let chai1 = new createUser("baqar","baqar@google.com");
+//    let chai2 = new createUser("zubair","zubair@google.com");
+//    console.log(chai1);
+//    console.log(chai2);
+
+
+let qwse = [1,4,5,7];
+
+ Array.prototype.fillter = function(){
+    this.push(4,5);
+    console.log(this); 
+ }
+ qwse.fillter()
+
+   
+   
+
+
+   
+   
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+     
+    
+                            
+    
+     
+    
+    
+     
+    
+
+
+
+    
+    
+
+    
+    
+
+    
+
+
+    
+
+        
+
+
+        
+        
+    
+    
+    
+    
+    
+
+   
+    
+    
+    
 
     
    
