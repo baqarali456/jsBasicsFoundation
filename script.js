@@ -868,9 +868,51 @@ let qwse = [1,4,5,7];
     this.push(4,5);
     console.log(this); 
  }
- qwse.fillter()
+ qwse.fillter();
 
    
+   console.clear();
+
+
+//    function says(call){
+//        console.log("Hii");
+//        call() 
+//    }
+
+//    function hellos(){
+//      console.log("baqar");
+//    }
+
+//    says(hellos);
+
+// function foo(callback){
+//     console.log("foo");
+//      callback()
+//    }
+
+//    function Bar(){
+//     console.log("Bar");
+    
+//    }
+
+//    foo(Bar);
+
+let arri = [11,15,17,18,21];
+
+Object.prototype.printify = function(){
+    console.log(this);
+}
+String.prototype.strPrint = function(){
+    console.log(this);
+}
+
+arri.printify()
+"Bear".strPrint()
+console.log("Bear");
+true.printify();
+
+
+
    
 
 
