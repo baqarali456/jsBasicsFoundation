@@ -996,14 +996,14 @@ console.clear();
 //     setTimeout(() => { // tq2
 //         resolve(4);
 //     }, 0);
- 
+
 // }).then((res) => console.log(res));
 
 // function say(){
 //     console.log("baq")
 // }
 // say()
-console.clear()
+console.clear();
 // setTimeout(()=>{
 //   console.log("baqar");
 // },0)
@@ -1021,52 +1021,347 @@ console.clear()
 // }
 // console.log(factorial);
 
-  // arr = [12,14,17,18];
-  // for(let i = 0;i<arr.length;i++){
-  //   if(arr[i] == 14){
-  //     console.log(arr[i]);
-  //     break;
-  //   }
-  //   console.log(arr[i])
-  // }
+// arr = [12,14,17,18];
+// for(let i = 0;i<arr.length;i++){
+//   if(arr[i] == 14){
+//     console.log(arr[i]);
+//     break;
+//   }
+//   console.log(arr[i])
+// }
 
-  //  sum = 0;
-  //  for(let i = 0;i<=10;i++){
-  //   sum += i;//15
-  //   console.log(sum)
-  //  }
+//  sum = 0;
+//  for(let i = 0;i<=10;i++){
+//   sum += i;//15
+//   console.log(sum)
+//  }
 
-  
+// const hello = () =>{
+//   console.log(this) // in browser global object and in node {} object
+// }
+// hello()
+// function  hello(){
+//   console.log(this) // in browser global object and in node <ref *1> Object [global]
+// }
+// hello()
 
-  // const hello = () =>{
-  //   console.log(this) // in browser global object and in node {} object
-  // }
-  // hello()
-  // function  hello(){
-  //   console.log(this) // in browser global object and in node <ref *1> Object [global]
-  // }
-  // hello()
+// const hello = function(){
+//   console.log(this)  // in browser global object and in node <ref *1> Object [global]
+// }
+// hello()
 
-  // const hello = function(){
-  //   console.log(this)  // in browser global object and in node <ref *1> Object [global]
-  // }
-  // hello()
+function User(username, email) {
+  this.username = username;
+  this.email = email;
+}
+
+User.prototype.Role = function (n) {
+  return `The role of ${this.username} is ${n}`;
+};
+
+let chai = new User("baqar", "baqar@yahii.com");
+// console.log(chai);
+
+// console.log(chai.Role("Full stack developer"));
+
+//   let time = new Date().getTime();
+//   console.log(time);
+
+// function GFG_Fun() {
+// 	let date = new Date(time);
+// 	console.log("Milliseconds = "+ date.toLocaleTimeString());
+// }
+// GFG_Fun();
+
+// document.getElementById('orange').addEventListener('click',(e)=>{
+//    let currentTargetTime = new Date();
+//    currentTargetTime.setMilliseconds(e.timeStamp);
+//    console.log(currentTargetTime.toLocaleTimeString());
+// });
+
+// async function hello(){
+//   return 5 + 7
+// }
+// console.log(hello());
+// console.log("baqar");
+
+// setTimeout(()=>{
+//  console.log("baqar")
+// },0)
+// let p = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     reject("Something went wrong");
+//   },0)
+// })
+// p.then(value=>console.log(value)).catch((error)=>console.log(error));
+
+// async function addition(x,y){
+//  return x + y
+// }
+// console.log(addition(4,7))
+
+// async function p(){
+//   console.log('fetching some data');
+//    let d = await addition(5,6);
+//    console.log(d,'fetch some data');
+// }
+
+// p()
+// p().then(val=>console.log(val)).catch(err=>console.log(err))
+
+// let p = new Promise((resolve,reject)=>{
+//   let user = {
+//     username:"baqar",
+//     role:"web development"
+//   }
+//   resolve(user)
+// })
+// console.log(p);
+
+// p.then(val=>{
+//   console.log(val)
+// })
+
+// console.log(promise1);
+
+// promise1.then((val)=>console.log(val)
+// )
+// console.log("baqar");
+// console.log("zubair");
+
+//  promise1.then(val=>{
+//   console.log(val)
+//   return {
+//     username:"baqar",
+//     role:"web developer"
+//   }
+// })
+// .then(val=>console.log(val));
+
+// let promise1 = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     console.log("baqar")
+    
+//    resolve("hello")
+//   },1000)
+// })
+
+// async function getPromise() {
+
+//   let value =  promise1;
+//   console.log(value);
+//   console.log("asdfghijkl")
+
+//   return 12
+
+// }
+
+// console.log(getPromise());
+
+// getPromise().then(result => console.log(result));
+// or
+// (async () => {
+//   console.log(await getPromise());
+// })();
+
+// const p1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("1 promise");
+//   }, 3000);
+// });
+// const p2 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("2 promise");
+//   }, 3000);
+// });
+// const p3 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("3 promise");
+//   }, 3000);
+// });
+
+// async function sequentialresolvePromise() {
+//   console.time()
+//   let val1 = await p1;
+//   console.log(val1);
+//   let val2 = await p2;
+//   console.log(val2);
+
+//   let val3 = await p3;
+//   console.log(val3);
+//   console.timeEnd()
+// }
+// sequentialresolvePromise();
 
 
-  function User(username,email){
-     this.username = username;
-     this.email = email;
+let p = new Promise((resolve,reject)=>{
+  let error = !true;
+  if(error){
+   reject(new ReferenceError("something went wrong"))
+  }
+  else{
+    resolve("baqar")
+  }
      
-  }
+});
+// console.log(p,"line no 1207")
 
-  User.prototype.Role = function(n){
-     return `The role of ${this.username} is ${n}`
-  }
+// p.then(val=>console.log(val)).catch(err=>console.log(err.message))
+
+// async function handle(){
+//   try {
+//     let val = await p;
+//     console.log(val)
+    
+//   } catch (error) {
+//     console.log(error.message);
+//   }
+// return "a"
+// }
+// console.log(handle())
+
+// let newrray = [4,7,10,12,1,20];
+// let sort = newrray[newrray.length - 1]
+      
+// for (let index = 0; index < newrray.length; index++) {
+//   console.log(newrray[index])
+//   if(arr[i] <= sort){
+//     sort = arr[i]
+//     console.log(sort)
+    
+//   } 
+  
+// }
+
+ arr = [45,47,48,12,113,14];
+
+// console.log(arr.push(1));
+// console.log(arr.concat([45,4,12,18,24]));
+// console.log(arr.some(ele=>ele > 50))
+// console.log(arr.findIndex(ele=>ele === 48))
+
+// let turn = "X"
+
+// const exchangeValue = () =>{
+//  return turn;
+// }
+
+//  function checkTurnValue(){
+//   let data = exchangeValue();
+//   console.log(data)
+//  }
+
+//  checkTurnValue()
+
+// function sums(){
+//   console.log(this)
+//   // console.log(this.name)
+  
+// }
+// sums()
+
+// const sums = function(){
+//  console.log(this.name)
+  
+// }
+// sums()
+// const sums = () =>{
+//   console.log(this.name || "baqar ali")
+// }
+// sums.call({name:"baqar"})
+
+// function createUser(name,age){
+//  this.name = name;
+//  this.age = age;
+//  console.log(this)
  
-  let chai = new User("baqar","baqar@yahii.com");
-  console.log(chai);
-  
-  // console.log(chai.Role("Full stack developer"));
-  
-  
-  
+// }
+
+// // createUser.prototype.changeName = function(name){
+// //  return this.name = name;
+// // }
+// const chaiwala =  createUser("baqar",26);
+// console.log(chaiwala)
+
+// console.log(chaiwala.changeName("Baqar Ali"))
+
+
+// Array.prototype.customforEach = function(callback){
+//     for (let index = 0; index < this.length; index++) {
+//       if(callback !== "function"){
+          // console.log("Please give a function")
+//       }
+//       callback(this[index],index) //(ele)=>console.log(ele)
+      
+//     }
+// }
+// let newArr = ["45","451"]
+// newArr.customforEach((ele)=>console.log(ele));
+
+//LOCAL AND GLOBAL SCOPE
+
+// let d = "baqar"
+// function sums (){
+//   d = "zubair"
+//  let website = "baqar.com";
+//  function inner(){
+//    let route = "https://"
+//    console.log(route + website);
+   
+//  }
+//  inner()
+//  console.log(route)
+ 
+// }
+// console.log(d)
+
+// sums()
+
+
+// Promise
+
+// let p1 = new Promise((resolve, reject) => {
+//   setTimeout(()=>{
+//     reject(new ReferenceError("hello error"))
+//   },1000)
+// })
+
+// p1.then(value=>console.log(value)).catch(err=>console.log(err.message))
+// console.log("baqar")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
