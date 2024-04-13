@@ -177,6 +177,143 @@ let heroes = ["superman","thor","batman","captain Marvel","Iron Man"];
 // heroes.forEach(ele=>console.log(ele))
 // console.log(heroes)
 
+// Date and Time
+// let date = new Date();
+// date.setMonth(2)
+// let getDatainstr = date.toDateString();
+// console.log(getDatainstr);
+
+// constructor function and Prototype
+
+// function createUser(name,role){
+//   this.name = name;
+//   this.role = role;
+//   return this;  
+// }
+
+// createUser.prototype.definerole = function(){
+//   console.log(`The role of ${this.name} is ${this.role}`)
+// }
+
+// let user1 = new createUser("Baqar","Full Stack development");
+// let user2 = createUser("Zubair","MERN development");
+// console.log(user1)
+
+// user1.definerole();
+// user2.definerole();
+
+// Global and Local Scope in JS
+
+// let num = 7;
+
+// {
+//   let num = 8;
+//   console.log(num);  
+// }
+// console.log(num)
+
+// let variable = "Baqar";
+
+// function main(){
+//   let variable = "Zubair ansari";
+// }
+
+// main()
+// console.log(variable);
+ 
+// function show(){
+//   let username = "baqar";
+//   {
+//     let web = "Danish"
+//     console.log(web,username)
+//   }
+//   console.log(username,web);
+  
+// }
+// show();
+
+
+// log this in different Functions
+
+// function logThis(){
+//   console.log(this) // window object in webAPI 
+  
+// }
+// logThis()
+// const logThis = function(){
+//   console.log(this)  // window object in webAPI
+  
+// }
+// logThis()
+
+// const logThis = () =>{
+//   console.log(this)  // window object in webAPI
+// }
+
+// logThis()
+
+
+// SetTimeout & setInterval in JS
+
+// setTimeout(()=>{
+//   console.log("baqar")
+// },1000)
+
+// function showInterval(){
+//     index++;
+//     if(index == 4){
+//       clearInterval(id)
+//     }
+//     console.log(index);
+// }
+
+// let index = 0
+// let id = setInterval(showInterval,1000)
+
+// const btn = document.querySelector('#orange');
+// const h1 = document.querySelector('h1');
+// let play = true;
+
+// function start(){
+//   if(count < 10){
+//     count++
+//   }
+//   h1.innerHTML = `count ${count}`
+// }
+// function stop(){
+//   if(count > 0){
+//     count--
+//   }
+//   h1.innerHTML = `count ${count}`
+// }
+
+// let count = 0;
+// let id;
+
+// btn.addEventListener('click',()=>{
+//   if(play){
+//     clearInterval(id)
+//     id = setInterval(start,1000);
+//     play = false;
+//   }
+//   else{
+//     clearInterval(id)
+//     id = setInterval(stop,1000);
+//     play = true;
+//   }
+  
+// })
+
+
+
+
+
+
+
+
+
+
+
 
 
 
